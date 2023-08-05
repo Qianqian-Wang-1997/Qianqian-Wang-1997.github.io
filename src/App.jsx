@@ -6,7 +6,7 @@ import Sidebar from './components/Sidebar'
 
 function App() {
   return (
-    <div className="font-mono min-h-screen w-full">
+    <div className="font-Ubuntu min-h-screen w-full">
       <div className="flex flex-row w-full">
         <div className="flex-none h-full">
           <Sidebar></Sidebar>

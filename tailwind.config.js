@@ -1,5 +1,4 @@
 /** @type {import('tailwindcss').Config} */
-const defaultTheme = require('tailwindcss/defaultTheme')
 
 export default {
   content: [
@@ -12,13 +11,15 @@ export default {
     },
     extend: {
       colors: {
-        "gray-blue": "#9BABB8",
-        "oatmeal": "#EEE3CB",
-        "brown": "#D7C0AE",
-        "dark-brown": "#967E76"
+        "navy": "#35155D",
+        "purple": "#512B81",
+        "blue": "#4477CE",
+        "light-blue": "#8CABFF"
       },
       fontFamily: {
-        'sans': ['Proxima Nova', ...defaultTheme.fontFamily.mono],
+        Reenie: ["Reenie", "sans-serif"],
+        Ubuntu: ["Ubuntu", "sans-serif"],
+        Carter: ["Carter", "sans-serif"]
       },
     },
   },

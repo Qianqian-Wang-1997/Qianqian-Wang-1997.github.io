@@ -3,7 +3,7 @@ import styles from "./index.module.scss"
 
 const Project = () => {
     return (
-        <div className="h-screen bg-oatmeal">
+        <div className="h-screen bg-blue">
         Project
         </div>
     )
