@@ -12,12 +12,13 @@ const About = () => {
         { icon: faEnvelope, url: "https://github.com/Qianqian-Wang-1997" },
     ]
     return (
-        <div className="container h-screen bg-purple p-8">
-            <img className="bg-[url('./src/assets/madder-ross.jpg')] hover:bg-[url('./src/assets/mad-ross.jpeg')] bg-cover 
+        <div className="w-full min-h-full bg-purple p-8 relative">
+            <img className="bg-[url('./src/assets/madder-ross.jpg')] 
+            hover:bg-[url('./src/assets/mad-ross.jpeg')] bg-cover 
             w-32 h-32 hover:w-40 hover:h-40 
             rounded-full border-4 mx-auto 
             ease-in-out duration-300"></img>
-            <p className="font-Ubuntu mb-4 text-bold text-5xl font-extrabold text-white pl-10 pb-4">Amber Wang</p>
+            <p className="font-Carter mb-4 text-bold text-5xl font-extrabold text-white pl-10 pb-4 pt-4">Amber Wang</p>
 
             {/* Google map */}
             <FontAwesomeIcon icon={faLocationDot} className="pr-2 h-5 inline-block" />
@@ -47,6 +48,8 @@ const About = () => {
                     })
                 }
             </div>
+
+            <FontAwesomeIcon icon={faAngleDoubleDown} className="absolute p-2 h-7 bottom-10 hover:text-amber-300" />
 
         </div>
     )

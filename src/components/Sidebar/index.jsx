@@ -15,19 +15,22 @@ const Sidebar = () => {
         { title: "Contact", icon: <ChatIcon /> },
     ]
     return (
-        <div className="font-Carter container bg-navy h-screen relative w-64 p-4" >
-            <h1 className="mt-5 text-8xl text-white ease-in-out duration-300 hover:text-amber-300">AW</h1>
-            <div className='absolute bottom-16 justify-center'>
-                {list.map((elem) => {
-                    return (
-                        <div key={elem.title} className="flex flex-row w-60 p-4">
-                            <div className="purple inline-block basis-1/4">{elem.icon}</div>
-                            <div className="font-bold text-xl inline-block basis-3/4 text-left">{elem.title}</div>
-                        </div>
-                    )
-                })}
+        <div className="font-Carter container bg-navy h-screen relative w-64 p-4 " >
+            <h1 className="mt-5 text-8xl ease-in-out duration-300 hover:text-white text-amber-300">AW</h1>
+            <div className="absolute bottom-10">
+                <div className='justify-center'>
+                    {list.map((elem) => {
+                        return (
+                            <div key={elem.title} className="flex flex-row p-4 hover:text-amber-300">
+                                <div className="purple inline-block basis-1/4 pr-3">{elem.icon}</div>
+                                <div className="font-bold text-xl inline-block basis-3/4 text-left ">{elem.title}</div>
+                            </div>
+                        )
+                    })}
+                </div>
+                <div className="left-0 pt-2 text-xs">© 2023 Amber Wang</div>
             </div>
-            <div className="absolute text-right">© 2023 Amber Wang</div>
+
         </div>
     )
 }

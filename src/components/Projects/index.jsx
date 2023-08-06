@@ -1,10 +1,13 @@
 import React from "react"
-import styles from "./index.module.scss"
+import ProjectCard from "./projectCard"
+
 
 const Project = () => {
+
     return (
-        <div className="h-screen bg-blue">
-        Project
+        <div className="w-full min-h-full bg-blue p-8">
+            <h1 className="font-Carter text-left text-4xl">PROJECTS</h1>
+            <ProjectCard></ProjectCard>
         </div>
     )
 }

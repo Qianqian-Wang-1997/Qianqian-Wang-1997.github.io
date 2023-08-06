@@ -3,7 +3,7 @@ import styles from "./index.module.scss"
 
 const Experience = () => {
     return (
-        <div className="h-screen bg-light-blue overflow-scroll">
+        <div className="min-h-full bg-light-blue overflow-scroll">
         Experience
         </div>
     )
