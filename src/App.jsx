@@ -1,5 +1,6 @@
 import './App.scss'
 import About from "./components/About"
+import Education from './components/Education'
 import Experience from './components/Experience'
 import Project from './components/Projects'
 import Sidebar from './components/Sidebar'
@@ -13,11 +14,12 @@ function App() {
          md:translate-x-0 transition-transform duration-150 ease-in">
           <Sidebar></Sidebar>
         </div>
-        <div className="flex-auto h-screen overflow-y-scroll 
+        <div className="flex-auto overflow-y-scroll 
         main flex flex-col flex-grow -ml-64 md:ml-0 transition-all duration-150 ease-in">
           <About></About>
-          <Project></Project>
           <Experience></Experience>
+          <Education></Education>
+          <Project></Project>
         </div>
       </div>
     </div>

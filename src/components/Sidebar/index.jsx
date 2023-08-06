@@ -8,9 +8,9 @@ import ChatIcon from "@mui/icons-material/Chat";
 
 const Sidebar = () => {
     const list = [
-        { title: "Home", icon: <HomeIcon /> },
-        { title: "Resume", icon: <Person2Icon /> },
-        { title: "Experience", icon: <SchoolIcon /> },
+        { title: "About", icon: <HomeIcon /> },
+        { title: "Experience", icon: <Person2Icon /> },
+        { title: "Education", icon: <SchoolIcon /> },
         { title: "Projects", icon: <LayersIcon /> },
         { title: "Contact", icon: <ChatIcon /> },
     ]
@@ -18,13 +18,15 @@ const Sidebar = () => {
         <div className="font-Carter container bg-navy h-screen relative w-64 p-4 " >
             <h1 className="mt-5 text-8xl ease-in-out duration-300 hover:text-white text-amber-300">AW</h1>
             <div className="absolute bottom-10">
-                <div className='justify-center'>
+                <div className='mx-auto'>
                     {list.map((elem) => {
                         return (
-                            <div key={elem.title} className="flex flex-row p-4 hover:text-amber-300">
-                                <div className="purple inline-block basis-1/4 pr-3">{elem.icon}</div>
-                                <div className="font-bold text-xl inline-block basis-3/4 text-left ">{elem.title}</div>
-                            </div>
+                            <a href={`#${elem.title}`} key={elem.title} >
+                                <div className="flex flex-row p-4 hover:text-amber-300">
+                                    <div className="purple inline-block basis-1/4 pr-3">{elem.icon}</div>
+                                    <div className="font-bold text-xl inline-block basis-3/4 text-left ">{elem.title}</div>
+                                </div>
+                            </a>
                         )
                     })}
                 </div>
