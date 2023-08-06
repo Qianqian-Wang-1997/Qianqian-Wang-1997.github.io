@@ -16,7 +16,7 @@ const Sidebar = () => {
     ]
     return (
         <div className="font-Carter container bg-navy h-screen relative w-64 p-4" >
-            <h1 className="mt-5 text-8xl">AW</h1>
+            <h1 className="mt-5 text-8xl text-white ease-in-out duration-300 hover:text-amber-300">AW</h1>
             <div className='absolute bottom-16 justify-center'>
                 {list.map((elem) => {
                     return (
