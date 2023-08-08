@@ -43,8 +43,9 @@ const school = [
         name: "University of BUPT",
         startDate: "2016-09-01T04:00:00.000Z",
         endDate: "2020-06-30T04:00:00.000Z",
-        location: "Ontario, Waterloo",
-        major: "Bachelor of Science - BS",
+        location: "Beijing, China",
+        degree: "Bachelor of Science - BS",
+        major:"Telecommunication Engineering",
         courses: [
         ],
         others: "",
