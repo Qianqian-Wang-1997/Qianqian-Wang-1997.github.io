@@ -7,7 +7,7 @@ import Sidebar from './components/Sidebar'
 
 function App() {
   return (
-    <div className="font-Ubuntu min-h-screen">
+    <div className="font-Ubuntu min-h-screen w-screen">
       <div className="flex flex-row">
         <div className="flex-none 
          w-64 md:shadow transform -translate-x-full 

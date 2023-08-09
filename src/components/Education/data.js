@@ -33,7 +33,7 @@ const school = [
         courses: [
             {
                 id: "14513",
-                title: "Introduction To Computer Systems"
+                title: "Introduction To Computer Systems / 4.0"
             }
         ],
         others: "Withdraw due to VISA issue of Proclamation 10043",

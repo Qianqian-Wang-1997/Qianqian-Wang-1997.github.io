@@ -1,5 +1,4 @@
 import React from "react"
-import styles from "./index.module.scss"
 import HomeIcon from "@mui/icons-material/Home";
 import Person2Icon from "@mui/icons-material/Person2";
 import SchoolIcon from "@mui/icons-material/School";

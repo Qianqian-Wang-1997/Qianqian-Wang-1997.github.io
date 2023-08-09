@@ -4,7 +4,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 import { useState } from "react";
 
-export function EducationCard({ name, startDate, endDate, location, degree, major, courses, others, logo }) {
+export function Card({ name, startDate, endDate, location, degree, major, courses, others, logo }) {
     let showDate = (date) => {
         return new Date(date).toLocaleString(
             'en-US',
@@ -16,11 +16,11 @@ export function EducationCard({ name, startDate, endDate, location, degree, majo
         bg-stone-50/50 hover:bg-stone-100
         drop-shadow-2xl">
             <div className="pb-4">
-                <h2 className="font-Carter text-xl">{name}</h2>
                 <div className='flex'>
                     <img src={`./src/assets/brand/${logo}.jpg`}
-                        className="w-16 h-16 rounded-full border-purple-200 border-4 drop-shadow-2xl" />
-                    <div className="w-3/4 pl-5">
+                        className="w-1/4 rounded-full border-purple-200 border-4 drop-shadow-2xl" />
+                    <div className="w-3/4 pl-5 justify-center my-auto">
+                        <h2 className="font-Carter text-xl">{name}</h2>
                         <div className="text-xs">
                             <div className="inline-block">
                                 <FontAwesomeIcon icon={faLocationDot} className="px-2 h-3 inline-block" />
