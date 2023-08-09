@@ -13,7 +13,7 @@ export function Card({ name, startDate, endDate, location, degree, major, course
     const [showMore, setShowMore] = useState(false)
     return (
         <div className="p-5  m-5 rounded-lg text-purple
-        bg-stone-50/50 hover:bg-stone-100
+        bg-stone-50/50 hover:bg-stone-100 transition-all ease-in-out
         drop-shadow-2xl">
             <div className="pb-4">
                 <div className='flex'>

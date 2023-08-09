@@ -1,6 +1,6 @@
 import React from "react"
 import school from "./data"
-import { Card } from "../Card"
+import { Card } from "./Card"
 
 const Education = () => {
 

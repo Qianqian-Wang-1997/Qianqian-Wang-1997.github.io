@@ -1,6 +1,6 @@
 import React from "react"
 import intern from "./data"
-import { Card } from "../Card"
+import { Card } from "./Card"
 
 const Experience = () => {
 
@@ -11,13 +11,14 @@ const Experience = () => {
                 intern.map((ele, index) => {
                     return (
                         <Card key={index} 
-                        name={ele.name}
+                        title={ele.title}
+                        companyName={ele.companyName}
                         startDate={ele.startDate}
                         endDate={ele.endDate}
                         location={ele.location}
-                        degree={ele.degree}
-                        major={ele.major}
-                        courses={ele.courses}
+                        locationType={ele.locationType}
+                        employmentType={ele.employmentType}
+                        jobs={ele.jobs}
                         others={ele.others}
                         logo={ele.logo}></Card>
                     )
