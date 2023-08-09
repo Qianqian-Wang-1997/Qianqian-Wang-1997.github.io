@@ -42,7 +42,7 @@ export function Card({ name, startDate, endDate, location, degree, major, course
                     courses.length !== 0 && (
                         <div>
                             <button onClick={() => { setShowMore(!showMore) }}
-                                className="mb-2 px-3 rounded-xl hover:bg-light-blue hover:text-white transition-all ease-in-out">
+                                className="font-Carter mb-2 px-3 rounded-xl hover:bg-light-blue hover:text-white transition-all ease-in-out">
                                 <p className='inline-block'>Related Courses</p>
                                 {!showMore ?
                                     <ExpandMoreIcon className="h-5 inline-block" /> :

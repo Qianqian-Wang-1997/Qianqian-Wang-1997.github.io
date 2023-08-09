@@ -14,7 +14,7 @@ export function Card({ title, companyName, startDate, endDate, location, locatio
 
     return (
         <div className="p-5  m-5 rounded-lg text-purple
-        bg-stone-50/50 hover:bg-stone-100
+        bg-stone-50/50 hover:bg-stone-100 transition-all ease-in-out
         drop-shadow-2xl">
             <div className="pb-4">
                 <div className='flex'>
@@ -38,18 +38,13 @@ export function Card({ title, companyName, startDate, endDate, location, locatio
 
             <div className='px-5 opacity-70'>
                 <div>
-                    <p className='inline-block'>Description</p>
                     <button onClick={() => { setShowMore(!showMore) }}
-                        className="mb-2 px-3 rounded-xl hover:bg-light-blue hover:text-white transition-all ease-in-out">
-                        {!showMore ?
-                            <ExpandMoreIcon className="h-5 inline-block" /> :
-                            <ExpandLessIcon className="h-5 inline-block" />}
+                        className="mb-2 px-3 rounded-xl font-Carter">
+                        <p className='inline-block'>Description</p>
                     </button>
                     <ul className={`text-left text-sm list-disc list-inside transition-all delay-150 duration-300 ease-in-out`}>
                         {
-                            showMore ? jobs.map((ele) => {
-                                return (<li>{ele}</li>)
-                            }) : jobs.slice(0, 3).map((ele) => {
+                            jobs.map((ele) => {
                                 return (<li>{ele}</li>)
                             })
                         }

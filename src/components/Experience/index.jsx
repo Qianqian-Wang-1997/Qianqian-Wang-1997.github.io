@@ -8,9 +8,9 @@ const Experience = () => {
         <div className="w-full bg-blue p-8" id="Experience">
             <h1 className="font-Carter text-left text-4xl">Experience</h1>
             {
-                intern.map((ele, index) => {
+                intern.map((ele) => {
                     return (
-                        <Card key={index} 
+                        <Card key={ele.companyName} 
                         title={ele.title}
                         companyName={ele.companyName}
                         startDate={ele.startDate}
