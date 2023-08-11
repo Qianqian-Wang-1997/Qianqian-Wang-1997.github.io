@@ -7,21 +7,16 @@ import Sidebar from './components/Sidebar'
 
 function App() {
   return (
-    <div className="font-Ubuntu min-h-screen w-screen">
-      <div className="flex flex-row">
-        <div className="flex-none 
-         w-64 md:shadow transform -translate-x-full 
-         md:translate-x-0 transition-transform duration-150 ease-in">
+    <div className="font-Ubuntu fixed flex w-full h-full">
+        <div className="w-16 md:w-48 lg:w-64">
           <Sidebar></Sidebar>
         </div>
-        <div className="flex-auto overflow-y-scroll 
-        main flex flex-col flex-grow -ml-64 md:ml-0 transition-all duration-150 ease-in">
+        <div className="flex-1 overflow-auto">
           <About></About>
           <Experience></Experience>
           <Education></Education>
           <Project></Project>
         </div>
-      </div>
     </div>
   )
 }

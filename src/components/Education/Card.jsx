@@ -17,8 +17,6 @@ export function Card({ name, startDate, endDate, location, degree, major, course
         drop-shadow-2xl">
             <div className="pb-4">
                 <div className='flex'>
-                    <img src={`./src/assets/brand/${logo}.jpg`}
-                        className="w-1/4 rounded-full border-purple-200 border-4 drop-shadow-2xl" />
                     <div className="w-3/4 pl-5 justify-center my-auto">
                         <h2 className="font-Carter text-xl">{name}</h2>
                         <div className="text-xs">
@@ -33,6 +31,8 @@ export function Card({ name, startDate, endDate, location, degree, major, course
                         <p className="">{degree}</p>
                         <p>{major}</p>
                     </div>
+                    <img src={`./src/assets/brand/${logo}.jpg`}
+                        className="w-1/4 rounded-full border-purple-200 border-4 drop-shadow-2xl" />
                 </div>
 
             </div>

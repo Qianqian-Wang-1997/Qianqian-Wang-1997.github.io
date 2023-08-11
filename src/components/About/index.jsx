@@ -49,9 +49,9 @@ const About = () => {
                     })
                 }
             </div>
-
-            <FontAwesomeIcon icon={faAngleDoubleDown} className="absolute p-2 h-7 bottom-10 hover:text-amber-300" />
-
+            <a href="#Experience">
+                <FontAwesomeIcon icon={faAngleDoubleDown} className="absolute p-2 h-7 bottom-10 hover:text-amber-300" />
+            </a>
         </div>
     )
 }

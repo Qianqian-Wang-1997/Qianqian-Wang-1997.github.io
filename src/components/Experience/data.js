@@ -20,7 +20,7 @@ const intern = [
     },
     {
         title: "Research Intership",
-        companyName: "ucb",
+        companyName: "UCB",
         startDate: "2019-07-01T04:00:00.000Z",
         endDate: "2019-09-30T04:00:00.000Z",
         location: "Remote",

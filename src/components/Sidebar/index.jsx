@@ -14,22 +14,24 @@ const Sidebar = () => {
         { title: "Contact", icon: <ChatIcon /> },
     ]
     return (
-        <div className="font-Carter container bg-navy h-screen relative w-64 p-4 " >
-            <h1 className="mt-5 text-8xl ease-in-out duration-300 hover:text-white text-amber-300">AW</h1>
-            <div className="absolute bottom-10">
-                <div className='mx-auto'>
+        <div className="font-Carter container bg-navy h-screen relative p-4 " >
+            <a className="mx-auto mt-5 text-base sm:text-xl md:text-7xl lg:text-8xl ease-in-out duration-300 hover:text-white text-amber-300"
+             href="#About">AW</a>
+            <div className="absolute bottom-10 mx-auto">
                     {list.map((elem) => {
                         return (
                             <a href={`#${elem.title}`} key={elem.title} >
-                                <div className="flex flex-row p-4 hover:text-amber-300">
-                                    <div className="purple inline-block basis-1/4 pr-3">{elem.icon}</div>
-                                    <div className="font-bold text-xl inline-block basis-3/4 text-left ">{elem.title}</div>
+                                <div className="flex flex-row py-2 hover:text-amber-300">
+                                    <div className="purple inline-block basis-1/4 ">{elem.icon}</div>
+                                    <div className="basis-3/4 text-left text-xl
+                                    sm:px-1 md:px-2 lg:px-3
+                                    hidden sm:hidden md:inline-block lg:inline-block 
+                                    ">{elem.title}</div>
                                 </div>
                             </a>
                         )
                     })}
-                </div>
-                <div className="left-0 pt-2 text-xs">© 2023 Amber Wang</div>
+                <div className="left-0 pt-2 text-xs hidden sm:hidden md:block lg:block">© 2023 Amber Wang</div>
             </div>
 
         </div>
