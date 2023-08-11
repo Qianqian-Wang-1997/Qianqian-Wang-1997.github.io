@@ -13,8 +13,8 @@ const About = () => {
     ]
     return (
         <div className="w-full min-h-screen bg-purple p-8 relative" id="About">
-            <img className="bg-[url('./src/assets/madder-ross.jpg')] 
-            hover:bg-[url('./src/assets/mad-ross.jpeg')] bg-cover 
+            <img className="bg-[url('/assets/madder-ross.jpg')] 
+            hover:bg-[url('/assets/mad-ross.jpeg')] bg-cover 
             w-32 h-32 hover:w-40 hover:h-40 
             rounded-full border-4 mx-auto 
             ease-in-out duration-300"></img>

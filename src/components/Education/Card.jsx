@@ -31,7 +31,7 @@ export function Card({ name, startDate, endDate, location, degree, major, course
                         <p className="">{degree}</p>
                         <p>{major}</p>
                     </div>
-                    <img src={`./src/assets/brand/${logo}.jpg`}
+                    <img src={`/assets/brand/${logo}.jpg`}
                         className="w-1/4 rounded-full border-purple-200 border-4 drop-shadow-2xl" />
                 </div>
 

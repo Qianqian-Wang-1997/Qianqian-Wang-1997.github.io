@@ -30,7 +30,7 @@ export function Card({ title, companyName, startDate, endDate, location, locatio
                             </p>
                         </div>
                     </div>
-                    <img src={`./src/assets/company/${logo}.jpg`}
+                    <img src={`/assets/company/${logo}.jpg`}
                         className="w-1/4 rounded-full border-purple-200 border-4 drop-shadow-2xl" />
                 </div>
 
