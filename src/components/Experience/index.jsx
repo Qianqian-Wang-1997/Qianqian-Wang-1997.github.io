@@ -5,7 +5,7 @@ import { Card } from "./Card"
 const Experience = () => {
 
     return (
-        <div className="w-full bg-blue p-8" id="Experience">
+        <div className="w-full p-8" id="Experience">
             <h1 className="font-Carter text-left text-4xl">Experience</h1>
             {
                 intern.map((ele) => {

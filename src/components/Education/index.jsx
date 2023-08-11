@@ -5,7 +5,7 @@ import { Card } from "./Card"
 const Education = () => {
 
     return (
-        <div className="w-full bg-light-blue p-8" id="Education">
+        <div className="w-full p-8" id="Education">
             <h1 className="font-Carter text-left text-4xl">EDUCATION</h1>
             {
                 school.map((ele, index) => {

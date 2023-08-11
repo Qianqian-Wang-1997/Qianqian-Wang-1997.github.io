@@ -11,7 +11,7 @@ function App() {
         <div className="w-16 md:w-48 lg:w-64">
           <Sidebar></Sidebar>
         </div>
-        <div className="flex-1 overflow-auto" style={{scrollBehavior: "smooth"}}>
+        <div className="flex-1 overflow-auto bg-purple" style={{scrollBehavior: "smooth"}}>
           <About></About>
           <Experience></Experience>
           <Education></Education>
