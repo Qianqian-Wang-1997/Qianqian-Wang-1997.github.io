@@ -17,11 +17,11 @@ export function Card({ name, startDate, endDate, location, degree, major, course
         drop-shadow-2xl">
             <div className="pb-4">
                 <div className='flex'>
-                    <div className="w-3/4 pl-5 justify-center my-auto">
+                    <div className="w-3/4 pl-5 justify-center my-auto text-xs sm:text-base md:text-lg lg:text-xl">
                         <h2 className="font-Carter text-xl">{name}</h2>
-                        <div className="text-xs">
+                        <div className="">
                             <div className="inline-block">
-                                <FontAwesomeIcon icon={faLocationDot} className="px-2 h-3 inline-block" />
+                                <FontAwesomeIcon icon={faLocationDot} className="px-2 inline-block" />
                                 <p className="inline-block">{location}</p>
                             </div>
                             <p className="inline-block px-5">
@@ -32,7 +32,7 @@ export function Card({ name, startDate, endDate, location, degree, major, course
                         <p>{major}</p>
                     </div>
                     <img src={`/assets/brand/${logo}.jpg`}
-                        className="w-1/4 rounded-full border-purple-200 border-4 drop-shadow-2xl" />
+                        className="hidden sm:block w-32 h-32 object-contain rounded-full border-purple-200 border-4 drop-shadow-2xl" />
                 </div>
 
             </div>

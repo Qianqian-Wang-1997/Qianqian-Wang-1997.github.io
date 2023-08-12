@@ -1,5 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
+import { faLocationDot, } from "@fortawesome/free-solid-svg-icons";
+import { faGithub, faSquareJs } from "@fortawesome/free-brands-svg-icons";
+
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 import { useState } from "react";
@@ -18,11 +20,11 @@ export function Card({ title, companyName, startDate, endDate, location, locatio
         drop-shadow-2xl">
             <div className="pb-4">
                 <div className='flex'>
-                    <div className="w-3/4 pl-5 justify-center my-auto">
-                        <h2 className="font-Carter text-xl">{companyName} - {title} </h2>
-                        <div className="text-xs">
+                    <div className="w-3/4 pl-5 justify-center my-auto text-xs sm:text-base md:text-lg lg:text-xl">
+                        <h2 className="font-Carter">{companyName} - {title} </h2>
+                        <div className="">
                             <div className="inline-block">
-                                <FontAwesomeIcon icon={faLocationDot} className="px-2 h-3 inline-block" />
+                                <FontAwesomeIcon icon={faLocationDot} className="px-2 inline-block" />
                                 <p className="inline-block">{location}</p>
                             </div>
                             <p className="inline-block px-5">
@@ -31,7 +33,7 @@ export function Card({ title, companyName, startDate, endDate, location, locatio
                         </div>
                     </div>
                     <img src={`/assets/company/${logo}.jpg`}
-                        className="w-1/4 rounded-full border-purple-200 border-4 drop-shadow-2xl" />
+                        className="hidden sm:block w-32 h-32 object-contain rounded-full border-purple-200 border-4 drop-shadow-2xl" />
                 </div>
 
             </div>
@@ -45,7 +47,15 @@ export function Card({ title, companyName, startDate, endDate, location, locatio
                     <ul className={`text-left text-sm list-disc list-inside transition-all delay-150 duration-300 ease-in-out`}>
                         {
                             jobs.map((ele) => {
-                                return (<li>{ele}</li>)
+                                return (
+                                    <>
+                                        <li>{ele.title}
+                                            {ele.projUrl &&
+                                                <a href={ele.projUrl}>
+                                                    <FontAwesomeIcon icon={faGithub} className="mx-2 h-4 inline-block bg-amber-300 rounded-full hover:text-black" />
+                                                </a>}</li>
+                                    </>
+                                )
                             })
                         }
                     </ul>

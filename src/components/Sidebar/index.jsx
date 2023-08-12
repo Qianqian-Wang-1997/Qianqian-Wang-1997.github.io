@@ -10,8 +10,8 @@ const Sidebar = () => {
         { title: "About", icon: <HomeIcon /> },
         { title: "Experience", icon: <Person2Icon /> },
         { title: "Education", icon: <SchoolIcon /> },
-        { title: "Projects", icon: <LayersIcon /> },
-        { title: "Contact", icon: <ChatIcon /> },
+        // { title: "Projects", icon: <LayersIcon /> },
+        // { title: "Contact", icon: <ChatIcon /> },
     ]
     return (
         <div className="font-Carter container bg-navy h-screen relative p-4 " >

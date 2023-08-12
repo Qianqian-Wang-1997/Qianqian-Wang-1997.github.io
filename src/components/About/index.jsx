@@ -9,7 +9,7 @@ const About = () => {
     const contact = [
         { icon: faGithub, url: "https://github.com/Qianqian-Wang-1997" },
         { icon: faLinkedin, url: "https://www.linkedin.com/in/qianqian-wang-1425341b4/" },
-        { icon: faEnvelope, url: "https://github.com/Qianqian-Wan" },
+        // { icon: faEnvelope, url: "https://github.com/Qianqian-Wan" },
     ]
     return (
         <div className="w-full min-h-screen bg-purple p-8 relative" id="About">
