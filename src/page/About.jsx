@@ -49,9 +49,16 @@ const About = () => {
                     })
                 }
             </div>
-            <a href="#Experience">
-                <FontAwesomeIcon icon={faAngleDoubleDown} className="absolute p-2 h-7 bottom-10 hover:text-amber-300" />
-            </a>
+            <div className="absolute bottom-10 inset-x-0 px-8 opacity-50">
+                <p>"It is not that we have a short time to live,</p>
+                <p>but that we waste a lot of it."</p>
+                <p className="text-right">— Seneca</p>
+                <a href="#Experience">
+                    <FontAwesomeIcon icon={faAngleDoubleDown} className="p-2 h-7 animate-bounce hover:text-amber-300 " />
+                </a>
+            </div>
+
+
         </div>
     )
 }

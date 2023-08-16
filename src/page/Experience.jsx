@@ -1,6 +1,6 @@
 import React from "react"
-import intern from "./data"
-import { Card } from "./Card"
+import intern from "../components/Experience/data"
+import { Card } from "../components/Experience/Card"
 
 const Experience = () => {
 

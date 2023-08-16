@@ -4,6 +4,7 @@ import Person2Icon from "@mui/icons-material/Person2";
 import SchoolIcon from "@mui/icons-material/School";
 import LayersIcon from "@mui/icons-material/Layers";
 import ChatIcon from "@mui/icons-material/Chat";
+import BookmarksIcon from '@mui/icons-material/Bookmarks';
 
 const Sidebar = () => {
     const list = [
@@ -12,6 +13,7 @@ const Sidebar = () => {
         { title: "Education", icon: <SchoolIcon /> },
         // { title: "Projects", icon: <LayersIcon /> },
         // { title: "Contact", icon: <ChatIcon /> },
+        { title: "Life Calendar", icon: <BookmarksIcon /> },
     ]
     return (
         <div className="font-Carter container bg-navy h-screen relative p-4 " >

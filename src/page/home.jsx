@@ -1,7 +1,6 @@
-import About from "../components/About"
-import Education from '../components/Education'
-import Experience from '../components/Experience'
-import Project from '../components/Projects'
+import About from "./About"
+import Education from './Education'
+import Experience from './Experience'
 import Sidebar from '../components/Sidebar'
 
 function Home() {
@@ -14,7 +13,6 @@ function Home() {
         <About></About>
         <Experience></Experience>
         <Education></Education>
-        {/* <Project></Project> */}
       </div>
     </div>
   )
