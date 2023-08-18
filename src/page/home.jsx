@@ -1,7 +1,8 @@
+import Sidebar from '../components/Sidebar'
 import About from "./About"
 import Education from './Education'
 import Experience from './Experience'
-import Sidebar from '../components/Sidebar'
+import Life from './Life'
 
 function Home() {
   return (
@@ -13,6 +14,7 @@ function Home() {
         <About></About>
         <Experience></Experience>
         <Education></Education>
+        <Life></Life>
       </div>
     </div>
   )
