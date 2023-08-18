@@ -13,7 +13,7 @@ const Sidebar = () => {
         { title: "Education", icon: <SchoolIcon /> },
         // { title: "Projects", icon: <LayersIcon /> },
         // { title: "Contact", icon: <ChatIcon /> },
-        { title: "Life Calendar", icon: <BookmarksIcon /> },
+        // { title: "Life Calendar", icon: <BookmarksIcon /> },
     ]
     return (
         <div className="font-Carter container bg-navy h-screen relative p-4 " >
