@@ -27,6 +27,7 @@
     "sass": "^1.64.2"
   },
   "devDependencies": {
+    "@tailwindcss/forms": "^0.5.4",
     "@tailwindcss/typography": "^0.5.9",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",

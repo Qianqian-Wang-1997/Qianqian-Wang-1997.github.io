@@ -1,8 +1,10 @@
 import './App.scss'
 import { Route, Routes } from "react-router-dom"
+import Sidebar from './components/Sidebar'
 import Home from "./page/portfolio/Home"
 import Login from "./page/user/Login"
-import Sidebar from './components/Sidebar'
+import Signup from './page/user/Signup'
+import ForgotPassword from './page/user/ForgotPassword'
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/sign-up" element={<Signup />} />
+          <Route path="/forgot-password" element={<ForgotPassword />} />
         </Routes>
       </div>
     </div>

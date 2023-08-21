@@ -22,15 +22,16 @@ const Sidebar = () => {
     return (
         <div className="font-Carter container bg-navy h-screen relative p-4" >
             <p className="mx-auto mt-5 text-base sm:text-xl md:text-7xl lg:text-8xl ease-in-out duration-300 hover:text-white text-amber-300">AW</p>
-            <div className="flex flex-col mx-auto text-center">
+            <div className="flex flex-col text-center">
                 <Link to="/login">
-                    <button className="btn ">
-                        <LoginIcon className="purple inline-block basis-1/4 " />
+                    <button className="btn">
+                        <LoginIcon className="purple inline-block basis-1/6" />
                         <p className="screen-pd-size screen-hide-text">Login</p>
                     </button>
                 </Link>
-
-                <button className="block">Sign up</button>
+                <Link to="/sign-up">
+                    <button className="block underline underline-offset-1 mx-auto screen-text-size">Sign up</button>
+                </Link>
             </div>
             <div className="absolute bottom-10 mx-auto">
                 {list.map((elem) => {
