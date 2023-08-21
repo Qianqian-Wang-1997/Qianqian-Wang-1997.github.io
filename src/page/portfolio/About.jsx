@@ -12,7 +12,7 @@ const About = () => {
         // { icon: faEnvelope, url: "https://github.com/Qianqian-Wan" },
     ]
     return (
-        <div className="w-full min-h-screen bg-purple p-8 relative" id="About">
+        <div className="w-full min-h-screen bg-purple p-8 relative">
             <img className="bg-[url('/assets/madder-ross.jpg')] 
             hover:bg-[url('/assets/mad-ross.jpeg')] bg-cover 
             w-32 h-32 hover:w-40 hover:h-40 
@@ -26,7 +26,7 @@ const About = () => {
             <p className="inline-block pb-4">Ontario, Canada</p>
 
             {/* Tag */}
-            <p>
+            <div>
                 <ReactTypingEffect
                     // Text to be typed
                     text={["Developer", "Daydreamer", "Mad Ross"]}
@@ -35,7 +35,7 @@ const About = () => {
                     eraseDelay="1500"
                     eraseSpeed="80"
                 />
-            </p>
+            </div>
 
             {/* Social links */}
             <div className="mx-auto pt-4">
@@ -57,8 +57,6 @@ const About = () => {
                     <FontAwesomeIcon icon={faAngleDoubleDown} className="p-2 h-7 animate-bounce hover:text-amber-300 " />
                 </a>
             </div>
-
-
         </div>
     )
 }

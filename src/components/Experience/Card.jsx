@@ -22,7 +22,7 @@ export function Card({ title, companyName, startDate, endDate, location, locatio
                 <div className='flex'>
                     <div className="w-3/4 pl-5 justify-center my-auto text-xs sm:text-base md:text-lg lg:text-xl">
                         <h2 className="font-Carter">{companyName} - {title} </h2>
-                        <div className="">
+                        <div>
                             <div className="inline-block">
                                 <FontAwesomeIcon icon={faLocationDot} className="px-2 inline-block" />
                                 <p className="inline-block">{location}</p>
@@ -46,15 +46,15 @@ export function Card({ title, companyName, startDate, endDate, location, locatio
                     </button>
                     <ul className={`text-left text-sm list-disc list-inside transition-all delay-150 duration-300 ease-in-out`}>
                         {
-                            jobs.map((ele) => {
+                            jobs.map((ele, index) => {
                                 return (
-                                    <>
-                                        <li>{ele.title}
-                                            {ele.projUrl &&
-                                                <a href={ele.projUrl}>
-                                                    <FontAwesomeIcon icon={faGithub} className="mx-2 h-4 inline-block bg-amber-300 rounded-full hover:text-black" />
-                                                </a>}</li>
-                                    </>
+                                    <li key={ele.index}>
+                                        {ele.title}
+                                        {ele.projUrl &&
+                                            <a href={ele.projUrl}>
+                                                <FontAwesomeIcon icon={faGithub} className="mx-2 h-4 inline-block bg-amber-300 rounded-full hover:text-black" />
+                                            </a>}
+                                    </li>
                                 )
                             })
                         }

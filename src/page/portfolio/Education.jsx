@@ -1,6 +1,6 @@
 import React from "react"
-import school from "../components/Education/data"
-import { Card } from "../components/Education/Card"
+import school from "../../components/Education/data"
+import { Card } from "../../components/Education/Card"
 
 const Education = () => {
 
@@ -8,9 +8,10 @@ const Education = () => {
         <div className="w-full p-8" id="Education">
             <h1 className="font-Carter text-left text-4xl">EDUCATION</h1>
             {
-                school.map((ele, index) => {
+                school.map((ele) => {
                     return (
-                        <Card key={index} 
+                        <Card 
+                        key={ele.name} 
                         name={ele.name}
                         startDate={ele.startDate}
                         endDate={ele.endDate}
