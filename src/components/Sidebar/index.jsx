@@ -24,13 +24,13 @@ const Sidebar = () => {
             <p className="mx-auto mt-5 text-base sm:text-xl md:text-7xl lg:text-8xl ease-in-out duration-300 hover:text-white text-amber-300">AW</p>
             <div className="flex flex-col text-center">
                 <Link to="/login">
-                    <button className="btn">
+                    <button className="hover:text-amber-300">
                         <LoginIcon className="purple inline-block basis-1/6" />
                         <p className="screen-pd-size screen-hide-text">Login</p>
                     </button>
                 </Link>
                 <Link to="/sign-up">
-                    <button className="block underline underline-offset-1 mx-auto screen-text-size">Sign up</button>
+                    <button className="block hover:text-amber-300 underline underline-offset-1 mx-auto screen-text-size">Sign up</button>
                 </Link>
             </div>
             <div className="absolute bottom-10 mx-auto">
