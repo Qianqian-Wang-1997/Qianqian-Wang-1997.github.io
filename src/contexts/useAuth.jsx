@@ -17,6 +17,7 @@ export function useAuth() {
 export function AuthProvider({ children }) {
     const [currentUser, setCurrentUser] = useState('test')
     const [loading, setLoading] = useState(true)
+    console.log('auth')
 
     useEffect(() => {
         const unsubscribe = () => {
