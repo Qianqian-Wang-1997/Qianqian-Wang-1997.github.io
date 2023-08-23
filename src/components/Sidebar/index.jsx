@@ -1,4 +1,3 @@
-import React from "react"
 import { HashLink } from 'react-router-hash-link';
 import { Link } from 'react-router-dom'
 
@@ -10,7 +9,11 @@ import SchoolIcon from "@mui/icons-material/School";
 // import BookmarksIcon from '@mui/icons-material/Bookmarks';
 import LoginIcon from '@mui/icons-material/Login';
 
+import { useAuth } from '../../contexts/useAuth'
+
 const Sidebar = () => {
+    const { currentUser, signout } = useAuth()
+
     const list = [
         { title: "About", icon: <HomeIcon /> },
         { title: "Experience", icon: <Person2Icon /> },
@@ -22,16 +25,23 @@ const Sidebar = () => {
     return (
         <div className="font-Carter container bg-navy h-screen relative p-4" >
             <p className="mx-auto mt-5 text-base sm:text-xl md:text-7xl lg:text-8xl ease-in-out duration-300 hover:text-white text-amber-300">AW</p>
-            <div className="flex flex-col mx-auto text-center">
-                <Link to="/login">
-                    <button className="btn ">
-                        <LoginIcon className="purple inline-block basis-1/4 " />
-                        <p className="screen-pd-size screen-hide-text">Login</p>
-                    </button>
-                </Link>
+            {currentUser ?
+                <div className=''>
+                    <button className='hover:text-amber-300 screen-pd-size screen-hide-text'>{currentUser?.email}</button>
+                    <button className='block hover:text-amber-300 underline underline-offset-1 mx-auto screen-text-size' onClick={signout}>Log Out</button>
+                </div>
+                : <div className="flex flex-col text-center">
+                    <Link to="/login">
+                        <button className="hover:text-amber-300">
+                            <LoginIcon className="purple inline-block basis-1/6" />
+                            <p className="screen-pd-size screen-hide-text">Login</p>
+                        </button>
+                    </Link>
+                    <Link to="/sign-up">
+                        <button className="block hover:text-amber-300 underline underline-offset-1 mx-auto screen-text-size">Sign up</button>
+                    </Link>
+                </div>}
 
-                <button className="block">Sign up</button>
-            </div>
             <div className="absolute bottom-10 mx-auto">
                 {list.map((elem) => {
                     return (
