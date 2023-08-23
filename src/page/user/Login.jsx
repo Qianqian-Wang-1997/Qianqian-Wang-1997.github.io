@@ -20,7 +20,7 @@ const Login = () => {
             await login(emailRef.current.value, passwordRef.current.value)
             navgate("/")
         } catch (e) {
-            console.log('error', e)
+            // console.log('error', e)
             setError("Failed to login, please try again!" + e)
         }
 

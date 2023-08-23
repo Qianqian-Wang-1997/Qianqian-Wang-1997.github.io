@@ -17,15 +17,13 @@ export function useAuth() {
 export function AuthProvider({ children }) {
     const [currentUser, setCurrentUser] = useState('test')
     const [loading, setLoading] = useState(true)
-    console.log('auth')
 
     useEffect(() => {
-        const unsubscribe = () => {
-            onAuthStateChanged(auth, (user) => {
-                setCurrentUser(user)
-                setLoading(false)
-            })
-        }
+        const unsubscribe = onAuthStateChanged(auth, (user) => {
+            setCurrentUser(user)
+            setLoading(false)
+        })
+
         return unsubscribe
     }, [])
 
@@ -51,7 +49,6 @@ export function AuthProvider({ children }) {
     }
 
     async function signout() {
-        console.log('signout click')
         return signOut(auth).then(() => {
         }).catch((error) => {
             throw error.message
@@ -68,7 +65,9 @@ export function AuthProvider({ children }) {
 
     return (
         <AuthContext.Provider value={value}>
-            {!loading && children}
+            {loading}
+            {children}
+            {/* {!loading && children} */}
         </AuthContext.Provider>
     )
 }

@@ -11,7 +11,6 @@ function App() {
   return (
     <div className="font-Ubuntu fixed flex w-full h-full">
       <AuthProvider>
-
         <div className="w-16 md:w-48 lg:w-64">
           <Sidebar />
         </div>
