@@ -13,13 +13,12 @@ const Login = () => {
 
     async function handleSubmit(e) {
         e.preventDefault()
-        console.log('handle submit login', emailRef.current.value, passwordRef.current.value)
 
         try {
             setError('')
             setLoading(true)
             await login(emailRef.current.value, passwordRef.current.value)
-            navgate("/success")
+            navgate("/")
         } catch (e) {
             console.log('error', e)
             setError("Failed to login, please try again!" + e)

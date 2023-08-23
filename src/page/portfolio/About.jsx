@@ -2,8 +2,11 @@ import React from "react"
 import ReactTypingEffect from "react-typing-effect";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope, faAngleDoubleDown, faLocationDot } from "@fortawesome/free-solid-svg-icons";
-// import styles from "./index.module.scss"
+import {
+    faEnvelope,
+    faAngleDoubleDown,
+    faLocationDot
+} from "@fortawesome/free-solid-svg-icons";
 
 const About = () => {
     const contact = [
@@ -49,7 +52,7 @@ const About = () => {
                     })
                 }
             </div>
-            <div className="absolute bottom-10 inset-x-0 px-8 opacity-50">
+            <div className="font-Reenie text-2xl absolute bottom-10 inset-x-0 px-8 opacity-50">
                 <p>"It is not that we have a short time to live,</p>
                 <p>but that we waste a lot of it."</p>
                 <p className="text-right">— Seneca</p>

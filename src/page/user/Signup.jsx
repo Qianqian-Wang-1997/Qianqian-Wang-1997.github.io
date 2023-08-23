@@ -13,8 +13,6 @@ const Signup = () => {
     const navgate = useNavigate()
 
     async function handleSubmit(e) {
-        // console.log('handle submit sign in', emailRef.current.value, passwordRef.current.value, passwordComfirmRef.current.value)
-
         e.preventDefault()
 
         if (passwordRef.current.value !== passwordComfirmRef.current.value) {
@@ -25,7 +23,7 @@ const Signup = () => {
             setError('')
             setLoading(true)
             await signup(emailRef.current.value, passwordRef.current.value)
-            navgate("/success")
+            navgate("/")
         } catch {
             setError("Failed to create an account, please check your email form is right")
         }
