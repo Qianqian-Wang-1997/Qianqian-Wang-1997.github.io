@@ -4,6 +4,7 @@ import {
     createUserWithEmailAndPassword,
     signInWithEmailAndPassword,
     onAuthStateChanged,
+    sendPasswordResetEmail,
     signOut
 } from "firebase/auth";
 
@@ -33,9 +34,7 @@ export function AuthProvider({ children }) {
                 const user = userCredential.user;
             })
             .catch((error) => {
-                // const errorCode = error.code;
-                const errorMessage = error.message;
-                throw errorMessage
+                throw error.message
             });
     }
 
@@ -45,19 +44,22 @@ export function AuthProvider({ children }) {
                 const user = userCredential.user;
             })
             .catch((error) => {
-                const errorMessage = error.message;
-                throw errorMessage
+                throw error.message;
+            });
+    }
+
+    async function forgotPassword(email) {
+        return sendPasswordResetEmail(auth, email)
+            .catch((error) => {
+                throw error.message;
             });
     }
 
     async function signout() {
         console.log('signout click')
         return signOut(auth).then(() => {
-            // Sign-out successful.
-            console.log('sign out successful')
         }).catch((error) => {
-            // An error happened.
-            console.log('failed to sign out')
+            throw error.message
         });
     }
 
@@ -65,6 +67,7 @@ export function AuthProvider({ children }) {
         currentUser,
         login,
         signup,
+        forgotPassword,
         signout
     }
 

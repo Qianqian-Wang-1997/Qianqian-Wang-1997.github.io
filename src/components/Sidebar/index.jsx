@@ -28,8 +28,8 @@ const Sidebar = () => {
             <p className="mx-auto mt-5 text-base sm:text-xl md:text-7xl lg:text-8xl ease-in-out duration-300 hover:text-white text-amber-300">AW</p>
             {currentUser ?
                 <div className=''>
-                    <button className=''>{currentUser?.email}</button>
-                    <button className='' onClick={signout}>Log Out</button>
+                    <button className='hover:text-amber-300 screen-pd-size screen-hide-text'>{currentUser?.email}</button>
+                    <button className='block hover:text-amber-300 underline underline-offset-1 mx-auto screen-text-size' onClick={signout}>Log Out</button>
                 </div>
                 : <div className="flex flex-col text-center">
                     <Link to="/login">

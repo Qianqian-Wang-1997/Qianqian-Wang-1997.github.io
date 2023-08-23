@@ -35,7 +35,7 @@ const Signup = () => {
         <div >
             <div className="w-full max-w-xs mx-auto my-8 text-purple">
                 <h1 className='font-Carter pb-5 text-4xl text-amber-300'>Sign Up</h1>
-                {error && <Alert error={error}></Alert>}
+                {error && <Alert type="error" message={error}></Alert>}
                 <form className="bg-white shadow-2xl rounded-xl px-8 pt-6 pb-8 mb-4"
                     onSubmit={handleSubmit}>
                     {/* Username */}
