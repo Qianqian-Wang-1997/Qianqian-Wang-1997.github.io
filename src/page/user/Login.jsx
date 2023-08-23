@@ -1,4 +1,4 @@
-import React, { useState, useRef, } from 'react'
+import { useState, useRef, } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { useAuth } from '../../contexts/useAuth'
 import Alert from '../../components/Alert'
@@ -69,7 +69,7 @@ const Login = () => {
 
                     {/* Sign up link */}
                     <div className='pt-3'>
-                        <p className="inline-block">Don't have an account?</p>
+                        <p className="inline-block">Don`&apos;`t have an account?</p>
                         <Link className="pl-2 inline-block align-baseline text-sm text-navy hover:text-amber-800 underline underline-offset-2" to="/sign-up">
                             Sign up!
                         </Link>

@@ -1,9 +1,11 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot, } from "@fortawesome/free-solid-svg-icons";
-import { faGithub, faSquareJs } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, 
+    // faSquareJs 
+} from "@fortawesome/free-brands-svg-icons";
 
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import ExpandLessIcon from '@mui/icons-material/ExpandLess';
+// import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+// import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 import { useState } from "react";
 
 export function Card({ title, companyName, startDate, endDate, location, locationType, employmentType, jobs, others, logo }) {
@@ -46,7 +48,7 @@ export function Card({ title, companyName, startDate, endDate, location, locatio
                     </button>
                     <ul className={`text-left text-sm list-disc list-inside transition-all delay-150 duration-300 ease-in-out`}>
                         {
-                            jobs.map((ele, index) => {
+                            jobs.map((ele) => {
                                 return (
                                     <li key={ele.index}>
                                         {ele.title}

@@ -30,9 +30,6 @@ export function AuthProvider({ children }) {
 
     async function login(email, password) {
         return signInWithEmailAndPassword(auth, email, password)
-            .then((userCredential) => {
-                const user = userCredential.user;
-            })
             .catch((error) => {
                 throw error.message
             });
@@ -40,9 +37,6 @@ export function AuthProvider({ children }) {
 
     async function signup(email, password) {
         return createUserWithEmailAndPassword(auth, email, password)
-            .then((userCredential) => {
-                const user = userCredential.user;
-            })
             .catch((error) => {
                 throw error.message;
             });

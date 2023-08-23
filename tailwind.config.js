@@ -28,7 +28,7 @@ export default {
   plugins: [
     // require('@tailwindcss/typography'),
     require('@tailwindcss/forms'),
-    plugin(function ({ addBase, addComponents, addUtilities, theme }) {
+    plugin(function ({ addBase, addComponents, theme }) {
       addBase({
         'h1': {
           fontSize: theme('fontSize.2xl'),
