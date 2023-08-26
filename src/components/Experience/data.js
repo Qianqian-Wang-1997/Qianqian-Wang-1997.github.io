@@ -36,6 +36,25 @@ const intern = [
         ],
         others: "",
         logo: "ucb"
+    },
+        {
+        title: "Research Intership",
+        companyName: "Tsinghua University",
+        startDate: "2018-01-01T04:00:00.000Z",
+        endDate: "2020-01-30T04:00:00.000Z",
+        location: "Beijing, China",
+        locationType: "Onsite",
+        employmentType: "Research Internship",
+        jobs: [
+            {title:"Collaborated with senior research scientists in detecting QIM-based steganography via Attention-Based Bidirectional Long Short-Term Memory Recurrent Neutral Networks (Voice Steganalysis) in Tensorflow"},
+            {
+                title: "Verified the quality of the audio dataset (155,327 data points) collected by our lab via different models, which was applied in the 1st Chinese Information Hiding Competition (CIHC 2019)",
+                projUrl: "https://github.com/Qianqian-Wang-1997/Voice_Steg",
+                language: "Python"
+            }
+        ],
+        others: "",
+        logo: "tsinghua"
     }
 ]
 export default intern
