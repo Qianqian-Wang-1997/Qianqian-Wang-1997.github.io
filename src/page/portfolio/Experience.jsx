@@ -1,4 +1,3 @@
-import React from "react"
 import intern from "../../components/Experience/data"
 import { Card } from "../../components/Experience/Card"
 

@@ -52,7 +52,7 @@ export function Card({ name, startDate, endDate, location, degree, major, course
                                 ${showMore ? "h-16" : "h-0"} transition-all delay-150 duration-300 overflow-auto `}>
                                 {
                                     courses.map((ele) => {
-                                        return (<li>{ele.id}: {ele.title}</li>)
+                                        return (<li key={ele.title}>{ele.id}: {ele.title}</li>)
                                     })
                                 }
                             </ul>
